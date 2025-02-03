@@ -11,13 +11,13 @@ module.exports = (req, res) => {
   //     target = "http://106.15.2.32:6969";
   //   }
 
-  createProxyMiddleware({
-    target,
-    changeOrigin: true,
-    pathRewrite: {
-       rewrite request path `/backend`
-        /backend/user/login => http://github.com/login
-         "^/backend/": "/",
-    },
-  })(req, res);
+  // createProxyMiddleware({
+  //   target,
+  //   changeOrigin: true,
+  //   pathRewrite: {
+  //      rewrite request path `/backend`
+  //       /backend/user/login => http://github.com/login
+  //        "^/backend/": "/",
+  //   },
+  // })(req, res);
 };
